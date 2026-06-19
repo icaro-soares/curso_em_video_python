@@ -1,3 +1,6 @@
+"""MP3 Player"""
+
+
 import pygame
 
 
