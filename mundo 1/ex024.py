@@ -1,3 +1,4 @@
+"""Exibe se o nome da cidade começa com SANTO"""
 cidade = input('Nome da cidade: ').strip().upper()
 if cidade.split()[0] == 'SANTO':
     print('Começa com "SANTO"!')

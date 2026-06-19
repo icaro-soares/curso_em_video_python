@@ -1,3 +1,4 @@
+"""Faz a máquina 'pensar' em um número para o usuário tentar adivinhar"""
 from random import randint
 
 

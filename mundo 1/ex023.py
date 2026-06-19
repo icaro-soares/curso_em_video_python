@@ -1,3 +1,4 @@
+"""Lê um valor e mostra o valor de suas casa, UNIDADE, DEZENA, CENTENA e MILHAR"""
 n = int(input('Número [0 a 9999]: '))
 u = n // 1 % 10
 d = n // 10 % 10
