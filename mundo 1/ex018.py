@@ -1,3 +1,6 @@
+"""Calcula o seno, cosseno e tangente de um ângulo"""
+
+
 from math import sin, cos, tan, radians
 
 

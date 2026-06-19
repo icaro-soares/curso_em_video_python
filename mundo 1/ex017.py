@@ -1,3 +1,6 @@
+"""Calcula a hipotenusa de um triângulo"""
+
+
 from math import hypot
 
 

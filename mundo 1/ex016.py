@@ -1,3 +1,6 @@
+"""Calcula a parte inteira de um valor float"""
+
+
 from math import trunc
 
 

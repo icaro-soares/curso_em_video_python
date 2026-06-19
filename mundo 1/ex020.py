@@ -1,9 +1,12 @@
+"""Sorteia uma ordem de alunos"""
+
+
 from random import shuffle
 
-aluno1 = input('1º aluno: ')
-aluno2 = input('2º aluno: ')
-aluno3 = input('3º aluno: ')
-aluno4 = input('4º aluno: ')
-alunos = [aluno1, aluno2, aluno3, aluno4]
+
+alunos = []
+for c in range(1, 5):
+    aluno = input(f'{c}º aluno: ')
+    alunos.append(aluno)
 shuffle(alunos)
 print(f'A ordem de apresentação será: {alunos}')

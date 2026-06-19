@@ -1,3 +1,4 @@
+"""Pergunta o preço de um produto e mostra o valor com desconto"""
 preço = int(input("Digite um valor: R$"))
 print(f"Você digitou R${preço:.2f}")
 novo_preço = preço - (preço * 0.05)

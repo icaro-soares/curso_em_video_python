@@ -1,3 +1,4 @@
+"""Cálcula a área de uma parede e diz quantos litros de tinta precisa para pintá-la"""
 alt = float(input('Altura da parede (m): '))
 larg = float(input('Largura da parede (m): '))
 area = alt*larg
