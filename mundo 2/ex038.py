@@ -1,3 +1,4 @@
+"""Diz o maior valor entre dois números ou se são iguais"""
 n1 = int(input('Digite um valor: '))
 n2 = int(input('Digite outro valor: '))
 if n1 > n2:

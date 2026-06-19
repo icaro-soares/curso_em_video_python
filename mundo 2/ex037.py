@@ -1,3 +1,4 @@
+"""Faz a conversão para BINÁRIO, OCTAL ou HEXADECIMAL"""
 núm = int(input('Número inteiro: '))
 base = int(input('Escolha a base de conversão: [1 - binário][2 - octal][3 - hexadecimal] '))
 if base == 1:

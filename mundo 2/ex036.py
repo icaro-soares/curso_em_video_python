@@ -1,3 +1,5 @@
+"""Pergunta o valor de uma casa e diz se o empréstimo está aprovado ou negado
+dependendo da porcentagem do salário"""
 valor_casa = float(input('Valor da casa: R$'))
 salário = float(input('Salário: R$'))
 anos = int(input('Anos: '))
