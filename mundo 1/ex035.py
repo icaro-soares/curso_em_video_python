@@ -1,3 +1,4 @@
+"""Lê três retas e diz se podem ou não fromar um triângulo"""
 r1 = float(input('Reta 1: '))
 r2 = float(input('Reta 2: '))
 r3 = float(input('Reta 3: '))

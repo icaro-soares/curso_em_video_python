@@ -1,3 +1,4 @@
+"""Pergunta um salário e dá o aumento dependendo do valor"""
 sal = float(input('Salário: R$'))
 print(f'Salário atual: R${sal:.2f}'.replace('.', ','))
 if sal > 1_250:

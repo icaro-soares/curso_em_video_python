@@ -1,3 +1,4 @@
+"""Calcula o maior valor entre dois números ou se são iguais"""
 n1 = int(input('1º número: '))
 maior = n1
 n2 = int(input('2º número: '))
