@@ -2,6 +2,7 @@
 
 
 from random import randint
+from time import sleep
 
 
 itens = ['pedra', 'papel', 'tesoura']
@@ -10,6 +11,13 @@ if jogador not in range(0, 3):
     print('Jogada inválida!')
     quit()
 computador = randint(0, 2)
+print('-=' * 30)
+print('JO... ', end='')
+sleep(.5)
+print('KEN... ', end='')
+sleep(.5)
+print('PÔ... ')
+sleep(.5)
 print('-=' * 30)
 print(f'Você escolheu {itens[jogador]}')
 print(f'Computador escolheu {itens[computador]}')
