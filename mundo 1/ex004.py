@@ -1,3 +1,4 @@
+"""Exibe informações sobre tipo de determinada frase"""
 algo = input('Digite algo: ')
 print(f'Tipo primitivo: {type(algo)}')
 print(f'É alfa: {algo.isalpha()}')

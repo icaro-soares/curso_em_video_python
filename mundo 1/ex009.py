@@ -1,3 +1,4 @@
+"""Mostra a tabuada de um número"""
 n = int(input('Digite um número para ver sua tabuada: '))
 print(f'Tabudada de {n}')
 print(f'1 x {n} = {n*1}')
