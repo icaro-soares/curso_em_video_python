@@ -1,3 +1,4 @@
+"""Calcula o valor da passagem dependendo da distância percorrida"""
 dist = float(input('Distância (km): '))
 if dist <= 200:
     valor = dist * 0.50
