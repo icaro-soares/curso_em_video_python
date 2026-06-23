@@ -6,7 +6,7 @@ for c in range(1, 5):
     sexo = input('Sexo: ').strip().upper()[0]
     print('-=' * 30)
     soma_idade += idade
-    if c == 1 and sexo == 'M':
+    if sexo == 'M':
         homem_mais_velho = idade
         nome_homem_mais_velho = nome
     else:
