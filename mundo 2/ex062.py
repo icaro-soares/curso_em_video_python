@@ -1,0 +1,12 @@
+termo = int(input('Digite o primeiro termo da PA: ')) # Usuário digita primeiro termo da PA
+razão = int(input('Digite a razão da PA: ')) # Usuário digita a razão da PA
+c = 1 # Contador
+total = 0 # Total de valores mostrados
+mais = 10 # Número de valores iniciais/a mais mostrados
+while mais != 0: # Enquanto o número de valores for diferente de 0 o loop ocorrerá
+    total += mais # Total de valores soma com valores mostrados
+    while c <= total:
+        print(f'{termo} ', end='')
+        termo += razão
+        c += 1
+    mais = int(input('\nQuantos termos mais devo mostrar? [0 p/ parar] '))
