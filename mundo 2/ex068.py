@@ -1,9 +1,9 @@
 from random import randint
 
 
-computador = randint(0, 9) # alusão a dez dedos das duas mãos
-jogador = int(input('Digite um valor: [0 e 9] '))
-if jogador not in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]:
-    print('Válido apenas número de dedos!')
-    quit()
-print(computador)
+computador = randint(0, 10) # alusão a dez dedos das duas mãos
+jogador = ' '
+while jogador not in range(0, 11):
+    jogador = int(input('Escolha um número: [entre 0 e 10] '))
+    if jogador not in range(0, 11):
+        print('Válido apenas número de dedos!')
