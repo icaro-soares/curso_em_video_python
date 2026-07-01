@@ -7,7 +7,7 @@ while True:
             print('Idade inválida, digite novamente!')
         else:
             break
-    if idade > 18:
+    if idade >= 18:
         mais_dezoito += 1
     sexo = ' '
     while sexo not in 'MmFf':
