@@ -13,7 +13,7 @@ for l in range(0, 3):
 print('-=' * 30)
 print(f'A) A soma dos pares é: {soma_pares}')
 for l in range(0, 3):
-    soma_coluna += matriz[l][c]
+    soma_coluna += matriz[l][2]
 print(f'B) Soma dos valores da segunda coluna: {soma_coluna}')
 for c in range(0, 3):
     if c == 1 or matriz[1][c] > maior_coluna:
