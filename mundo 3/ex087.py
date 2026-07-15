@@ -1,5 +1,5 @@
 matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
-soma_pares = soma_coluna = maior_coluna = 0
+soma_pares = 0
 for l in range(0, 3):
     for c in range(0, 3):
         matriz[l][c] = int(input(f'Digite um valor ({l}, {c}): '))
@@ -13,9 +13,7 @@ for l in range(0, 3):
 print('-=' * 30)
 print(f'A) A soma dos pares é: {soma_pares}')
 for l in range(0, 3):
-    soma_coluna += matriz[l][2]
+    soma_coluna = matriz[0][2] + matriz[1][2] + matriz[2][2]
 print(f'B) Soma dos valores da segunda coluna: {soma_coluna}')
-for c in range(0, 3):
-    if c == 1 or matriz[1][c] > maior_coluna:
-        maior_coluna = matriz[1][c]
-print(f'C) O maior valor da terceira coluna: {maior_coluna}')
+maior_linha = max(matriz[2])
+print(f'C) O maior valor da terceira linha: {maior_linha}')
