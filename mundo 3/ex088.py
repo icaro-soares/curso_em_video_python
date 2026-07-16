@@ -2,10 +2,16 @@ from random import randint
 from time import sleep
 
 jogos_mega_sena = []
-while len(jogos_mega_sena) < 6:
-    n = randint(0, 60)
-    if n not in jogos_mega_sena:
-        jogos_mega_sena.append(n)
+temp = []
+qnt = int(input('Quantos jogos devo criar? '))
+for cont in range(0, qnt):
+    while len(temp) < 6:
+        n = randint(0, 60)
+        if n not in jogos_mega_sena:
+            temp.append(n)
+    jogos_mega_sena.append(temp[:])
+    temp.clear()
+    cont += 1
 print('-=' * 30)
-jogos_mega_sena.sort()
-print(f'Seu jogo: {jogos_mega_sena}')
+for jogo in jogos_mega_sena:
+    print(f'JOGO: {sorted(jogo)}')
