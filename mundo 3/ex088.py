@@ -13,5 +13,5 @@ for cont in range(0, qnt):
     temp.clear()
     cont += 1
 print('-=' * 30)
-for jogo in jogos_mega_sena:
-    print(f'JOGO: {sorted(jogo)}')
+for i, jogo in enumerate(jogos_mega_sena):
+    print(f'JOGO {i+1}: {sorted(jogo)}')
