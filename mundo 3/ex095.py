@@ -1,8 +1,12 @@
 # nome, partidas, qntd gols partida, gols no total, funcionar + de 1
+import os
+
+
 ficha = {}
 núm_gols = []
 dados = []
 while True:
+    os.system('cls' if os.name == 'nt' else 'clear')
     núm_gols.clear()
     ficha['nome'] = input('Nome do jogador: ').strip()
     tot_part = int(input(f'Quantas partidas {ficha['nome']} jogou: '))
@@ -16,18 +20,17 @@ while True:
         resp = input('Quer continuar? [S/N] ')
     if resp in 'Nn':
         break
-print('-' * 30)
-print(ficha)
-print('-' * 30)
-print(f'{'cód':<10}{'nome'}{'total gols':>12}')
+os.system('cls' if os.name == 'nt' else 'clear')
+print('-' * 60)
+print(f'{'cód':<7}{'nome'}{'total gols':>25}')
 for i, j in enumerate(dados):
-    print(f'{i:<10}{j['nome']}{j['total_gols']:>12}')
-print('-' * 30)
+    print(f'{i:<7}{j['nome']}{j['total_gols']:>20}')
+print('-' * 60)
 jog = ' '
 while jog != 999:
     jog = int(input('Qual jogador deseja ver o aproveitamento? [999 p/ parar] '))
-    if jog in range(len(dados)):
-        print(f'Levantamento de {dados[jog]['nome']}')
+    if jog in range(len(ficha)):
+        print(f'Levantamento de {ficha['nome']}')
         print('-' * 30)
-        for d in dados[jog]['gols']:
+        for d in range(dados):
             print(f'Na partida {d+1} fez {dados[jog]['gols']}')
