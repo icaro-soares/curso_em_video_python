@@ -22,15 +22,20 @@ while True:
         break
 os.system('cls' if os.name == 'nt' else 'clear')
 print('-' * 60)
-print(f'{'cód':<7}{'nome'}{'total gols':>25}')
+print(f'{'cód':<4}{'nome':<15}{'total gols':<10}')
 for i, j in enumerate(dados):
-    print(f'{i:<7}{j['nome']}{j['total_gols']:>20}')
+    print(f'{i:<4}{j['nome']:<15}{j['total_gols']:<10}')
 print('-' * 60)
 jog = ' '
-while jog != 999:
+while True:
     jog = int(input('Qual jogador deseja ver o aproveitamento? [999 p/ parar] '))
-    if jog in range(len(ficha)):
-        print(f'Levantamento de {ficha['nome']}')
+    if jog == 999:
+        print('Volte sempre!')
+        break
+    if jog >= 0 and jog < len(dados):
+        print(f'Levantamento de {dados[jog]['nome']}:')
+        for i, gols in enumerate(dados[jog]['gols']):
+            print(f'Na partida {i+1} fez {gols} gols.')
         print('-' * 30)
-        for d in range(dados):
-            print(f'Na partida {d+1} fez {dados[jog]['gols']}')
+    else:
+        print(f'Erro! Não existe jogador com código {jog}!')
