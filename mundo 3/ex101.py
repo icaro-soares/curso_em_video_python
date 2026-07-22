@@ -11,7 +11,7 @@ def voto(nascimento):
     """
     if (atual - nascimento) >= 18:
         return 'OBRIGATÓRIO'
-    elif 16 <= (atual - nascimento) < 18:
+    elif 16 <= (atual - nascimento) < 18 or (atual - nascimento) >= 65:
         return 'OPCIONAL'
     else:
         return 'NEGADO'
