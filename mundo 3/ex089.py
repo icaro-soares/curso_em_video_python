@@ -10,7 +10,7 @@ while True:
         resp = input('Quer continuar? [S/N] ').strip()[0]
     if resp in 'Nn':
         break
-print('-=' * 30)
+print('-' * 30)
 print('boletim'.upper().center(30))
 print('-' * 30)
 for i, a in enumerate(aluno):
