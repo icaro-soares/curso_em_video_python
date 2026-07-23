@@ -16,7 +16,7 @@ print('Sua vez!')
 j = input('Nome: ')
 g = input('Gols: ')
 if g.isnumeric():
-    int(g)
+    g = int(g)
 else:
     g = 0
 if j.strip() == '':
