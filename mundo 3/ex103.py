@@ -1,4 +1,9 @@
 def ficha(jogador='<desconhecido>', gols=0):
+    """
+    :param jogador: recebe o nome de um jogador, caso não, recebe <desconhecido>
+    :param gols: recebe quantidade de gols, caso não recebe 0
+    :print: retorna a ficha do jogador, nome e nº de gols
+    """
     print(f'Jogador: {jogador}\nGols: {gols}')
 
 
