@@ -1,12 +1,12 @@
 def leiaInt(msg):
     """
     :param msg: Prompt que recebe a pergunta pro usuário
-    :var n: armazena a informação dada pelo usuário, caso seja um número é convertida para um int, se não o programa dá erro, mas continua funcionando
+    :return: retorna um número inteiro válido
     """
     while True:
-        n = input('Digite um número: ')
+        n = input(msg)
         if n.isnumeric():
-            n = int(n)
+            return int(n)
         else:
             print('Erro! Digite um número!')
 
