@@ -10,7 +10,7 @@ cores = (
         '\033[7;30m]',
 )
 
-def escreva(msg, cor=4):
+def escreva(msg, cor=0):
     tam = len(msg)
     print(cores[cor], end='')
     print('=' * (tam + 4))
@@ -25,7 +25,7 @@ while True:
     if opc == 'fim':
         escreva('Obrigado!', cor=-3)
         break
-    if opc in dir(__builtins__):
+    elif opc in dir(__builtins__):
         print(help(opc))
     else:
-        escreva('ERRO: O comando não existe!')
+        escreva('ERRO: O comando não existe!', cor=1)
