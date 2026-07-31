@@ -31,3 +31,4 @@ def resumo(preço=0, taxa_aum=10, taxa_red=5):
     print(f'{taxa_aum}% aumento: \t\t{aumentar(preço, taxa_aum, format=True)}')
     print(f'{taxa_red}% redução: \t\t{diminuir(preço, taxa_red, format=True)}')
     print('-' * 32)
+    
