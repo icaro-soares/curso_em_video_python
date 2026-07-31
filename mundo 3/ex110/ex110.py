@@ -1,4 +1,4 @@
-import moeda
+from moeda import *
 
 valor = float(input('Digite um valor: '))
-moeda.resumo(valor)
+resumo(valor)
