@@ -20,9 +20,3 @@ def leiaFloat(msg):
         except KeyboardInterrupt:
             print('\033[0;31mO usuário preferiu não digitar o valor.\033[m')
         return núm
-
-
-n1 = leiaInt('Digite um valor: ')
-n2 = leiaFloat('Digite outro valor: ')
-print(f'\033[0;32mO valor inteiro digitado foi {n1}, e o valor Real foi {n2}\033[m')
- 
