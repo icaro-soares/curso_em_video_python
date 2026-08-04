@@ -5,4 +5,9 @@ def menu():
     print('''    1. Ver pessoas cadastradas
     2. Cadastrar nova pessoa
     3. Sair''')
+
+
+def linha(txt):
+    print('-' * 60)
+    print(txt)
     print('-' * 60)
