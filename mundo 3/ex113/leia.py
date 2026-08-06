@@ -1,4 +1,4 @@
-def leiaInt(msg):
+def leiaint(msg):
     while True:
         try:
             núm = int(input(msg))
@@ -10,7 +10,7 @@ def leiaInt(msg):
         return núm
 
 
-def leiaFloat(msg):
+def leiafloat(msg):
     while True:
         try:
             núm = float(input(msg).replace(',', '.'))
