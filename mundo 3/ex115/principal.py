@@ -1,6 +1,11 @@
 from modulos.interface import *
+from modulos.arquivo import *
 from time import sleep
 
+
+arq = 'cursoemvideo.txt'
+if not abrirArquivo(arq):
+    criarArquivo(arq)
 
 while True:
     resp = menu(['Ver pessoas cadastradas', 'Cadastrar nova pessoa',
