@@ -13,5 +13,5 @@ while True:
         cabecalho('Saindo...')
         break
     else:
-        print('Opção inválida!')
+        cabecalho('Opção inválida!')
     sleep(2)
