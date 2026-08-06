@@ -1,3 +1,6 @@
+from modulos.interface import *
+
+
 def arquivoExiste(nome):
     try:
         a = open(nome, 'rt')
@@ -16,3 +19,12 @@ def criarArquivo(nome):
         print('Algo deu errado na criação do arquivo!')
     else:
         print('Arquivo criado com sucesso!')
+
+def lerArquivo(nome):
+    try:
+        a = open(nome, 'rt')
+    except:
+        print('Algo deu errado!')
+    else:
+        cabecalho('PESSOAS CADASTRADAS')
+        print(a.read())

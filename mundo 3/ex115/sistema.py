@@ -1,6 +1,6 @@
 from modulos.interface import *
-from modulos.arquivo import *
 from time import sleep
+from modulos.arquivo import *
 
 arq = 'cursoemvideo.txt'
 if not arquivoExiste(arq):
@@ -9,7 +9,7 @@ if not arquivoExiste(arq):
 while True:
     resp = menu(['Ver pessoas cadastradas', 'Cadastrar nova pessoa', 'Sair'])
     if resp == 1:
-        cabecalho('Pessoas cadastradas')
+        lerArquivo(arq)
     elif resp == 2:
         cabecalho('Cadastro de pessoa...')
     elif resp == 3:
