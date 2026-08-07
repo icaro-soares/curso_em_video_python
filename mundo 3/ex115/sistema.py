@@ -13,6 +13,9 @@ while True:
         lerArquivo(arq)
     elif resp == 2:
         cabecalho('Cadastro de pessoa...')
+        nome = input('Nome: ').strip().title()
+        idade = leiaInt('Idade: ')
+        cadastrar(arq, nome, idade)
     elif resp == 3:
         cabecalho('Saindo...')
         break
