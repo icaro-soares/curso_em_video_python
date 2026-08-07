@@ -1,6 +1,7 @@
 from modulos.interface import *
-from time import sleep
 from modulos.arquivo import *
+from time import sleep
+
 
 arq = 'cursoemvideo.txt'
 if not arquivoExiste(arq):
