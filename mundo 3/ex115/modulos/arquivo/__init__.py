@@ -27,7 +27,10 @@ def lerArquivo(nome):
         print('\033[31mAlgo deu errado!\033[m')
     else:
         cabecalho('PESSOAS CADASTRADAS')
-        print(a.read())
+        for linha in a:
+            dado = linha.split(';')
+            dado[1] = dado[1].replace('\n', '')
+            print(f'{dado[0]:<30}{dado[1]:>3} anos')
 
 
 def cadastrar(arq, nome='desconhecido', idade=0):
@@ -37,7 +40,7 @@ def cadastrar(arq, nome='desconhecido', idade=0):
         print('\033[31mHouve um erro ao abrir o arquivo!\033[m')
     else:
         try:
-            a.write(f'{nome:<21}{idade:>21}\n')
+            a.write(f'{nome};{idade}\n')
         except:
             print('\033[31mHouve um erro no cadastro da pessoa!\033[m')
         else:

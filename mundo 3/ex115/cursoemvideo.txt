@@ -1,2 +1,4 @@
-Maria                                   86
-Ana                                     15
+Maria;86
+Pedro;20
+Bia;18
+Sandra;62
