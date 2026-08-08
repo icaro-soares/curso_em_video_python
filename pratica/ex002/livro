@@ -1,10 +1,7 @@
 Classe Livro com Validação (Encapsulamento e Exceções)
 
 Objetivo: Crie uma classe Livro que receba titulo, autor e paginas.
-
 Ações:
-
 No __init__, adicione uma validação com try...except ou if garantindo que
 paginas seja um número inteiro positivo maior que zero. Se o valor for inválido, lance ou trate o erro.
-
 Crie um método detalhes() que exiba o resumo do livro no terminal.
