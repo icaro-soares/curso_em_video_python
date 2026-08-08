@@ -1,0 +1,10 @@
+Sistema de Cadastro de Alunos (Lista de Objetos)Objetivo:
+
+Crie uma classe Aluno que receba nome e uma lista de notas.
+
+Ações:Crie um método calcular_media() que retorne a média das notas.
+
+Crie um método status() que retorne "Aprovado" se a média for $\ge 7.0$ e "Reprovado" caso contrário.
+
+No programa principal, crie um laço que instancie 3 alunos diferentes,
+guarde-os em uma lista e exiba a situação de cada um.

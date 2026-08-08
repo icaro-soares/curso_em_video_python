@@ -1,0 +1,12 @@
+Classe ContaBancaria (Atributos e Métodos Simples)
+
+Objetivo: Crie uma classe chamada ContaBancaria com o método construtor __init__
+que receba titular e saldo (com valor padrão 0.0).
+
+Ações:
+
+# Crie um método depositar(valor) que soma ao saldo.
+
+# Crie um método sacar(valor) que diminui o saldo (se houver saldo suficiente, senão exibe aviso).
+
+# Crie um método extrato() que imprime o titular e o saldo atual formatado em R$.
