@@ -10,8 +10,11 @@ class ContaBancaria:
 
 
     def sacar(self, valor):
-        self.saldo -= valor
-        print(f'Saque de R${valor:.2f}')
+        if self.saldo >= valor:
+            self.saldo -= valor
+            print(f'Saque de R${valor:.2f}')
+        else:
+            print(f'Saque de R${valor:.2f} negado! Saldo insuficiente!')
 
 
     def extrato(self):

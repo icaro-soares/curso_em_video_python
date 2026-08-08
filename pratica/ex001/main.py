@@ -1,4 +1,4 @@
-from conta import *
+from conta import ContaBancaria
 
 
 pessoa = ContaBancaria('Gustavo', 100)
@@ -7,3 +7,4 @@ pessoa.deposito(100)
 pessoa.extrato()
 pessoa.sacar(150)
 pessoa.extrato()
+pessoa.sacar(60)
